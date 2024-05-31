@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <p>tic-tac-toe</p>
+        <button type="button">New Player</button>
+    </nav>
+    <div class="container">
+        <div class="player">
+            <p class="name">Player</p>
+            <div class="profile">
+                <img src="./images/playerProfile.png" alt="playerProfile">
+            </div>
+        </div>
+        <div class="gameBoard">
+            <div class="score"></div>
+            <div class="board">
+                <button id="0" value=""></button>
+                <button id="1" value=""></button>
+                <button id="2" value=""></button>
+                <button id="3" value=""></button>
+                <button id="4" value=""></button>
+                <button id="5" value=""></button>
+                <button id="6" value=""></button>
+                <button id="7" value=""></button>
+                <button id="8" value=""></button>
+            </div>
+            <div class="choose">
+                <button class="chosen" value="buttonX">X</button>
+                <button value="buttonO">O</button>
+            </div>
+            <div class="refresh">
+                <button value="refresh">
+                    <img src="./images/refresh-cw.svg" alt="cancel">
+                </button>
+            </div>
+        </div>
+        <div class="bot">
+            <p class="name">EasyBot</p>
+            <div class="profile">
+                <img src="./images/botProfile.png" alt="playerProfile">
+            </div>
+        </div>
+    </div>
+    <footer>Copyright@2024 MISHA</footer>
+    <dialog>
+        <div class="iconContainer">
+            <img class="iconButton cancel" src="./images/x-square.svg" alt="cancel">
+        </div>
+        <form action="#" method="dialog">
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="Name">
+            </div>
+            <div>
+                <label for="Profile">Profile</label>
+                <input type="file" id="Profile" name="Profile" accept="image/*">
+            </div>
+            <input type="button" value="submit">
+        </form>
+    </dialog>
+</body>
+
+</html>
