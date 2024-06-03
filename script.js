@@ -63,7 +63,7 @@
             while (board.firstChild) {
                 board.removeChild(board.firstChild);
             }
-            for (i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 8; i++) {
                 const button = document.createElement('button');
                 button.value = '';
                 button.id = i;
@@ -86,7 +86,7 @@
                 buttonO.classList.remove('chosen');
                 player.choice = 'X';
                 bot.choice = 'O';
-            } else {
+            } else if (value == 'buttonO') {
                 buttonO.classList.add('chosen');
                 buttonX.classList.remove('chosen');
                 player.choice = 'O';
@@ -133,8 +133,9 @@
 
         gameBoard.addEventListener('click', event => {
             const target = event.target;
-            if (target.value == 'refresh') {
+            if (target.classList.contains('refreshButton')) {
                 initializeGame();
+                console.log(target);
             } else if (target.value == 'buttonX' || target.value == 'buttonO') {
                 toggleXO(target.value);
             } else if (target.value == '' && !gameEndFlag) {
@@ -147,6 +148,7 @@
                     checkForWinner(bot);
                 }
             }
+
         })
     })();
 })();

@@ -120,7 +120,7 @@ nav>button {
 }
 
 .choose>.chosen {
-    border:var(--border-hover);
+    border: var(--border-hover);
 }
 
 .refresh>button {
