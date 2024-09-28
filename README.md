@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-## Introduction
+## Overview
 
 This is a simple Tic Tac Toe game implemented in JavaScript, featuring a player vs. bot mode. Players can set their name and profile image, choose their symbol (X or O), and play against an AI bot. The game detects wins, ties, and allows for refreshing the game board.
 
